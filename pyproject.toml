@@ -7,7 +7,9 @@ authors = [
     { name = "Gabriel Fuentes", email = "gafnts@gmail.com" }
 ]
 requires-python = ">=3.14.3"
-dependencies = []
+dependencies = [
+    "langchain>=1.2.10",
+]
 
 [project.scripts]
 llm-entity-extractor = "llm_entity_extractor:main"
@@ -15,3 +17,10 @@ llm-entity-extractor = "llm_entity_extractor:main"
 [build-system]
 requires = ["uv_build>=0.10.4,<0.11.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.2",
+    "mypy>=1.19.1",
+    "pre-commit>=4.5.1",
+]
