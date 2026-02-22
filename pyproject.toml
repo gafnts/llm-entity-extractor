@@ -1,0 +1,17 @@
+[project]
+name = "llm-entity-extractor"
+version = "0.1.0"
+description = "Extracting entities from legal documents with LLMs"
+readme = "README.md"
+authors = [
+    { name = "Gabriel Fuentes", email = "gafnts@gmail.com" }
+]
+requires-python = ">=3.14.3"
+dependencies = []
+
+[project.scripts]
+llm-entity-extractor = "llm_entity_extractor:main"
+
+[build-system]
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"
